@@ -1,17 +1,34 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	"os"
 
+	"github.com/ekkapob/codetime/handlers"
+	gh "github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"github.com/namsral/flag"
 )
 
 func main() {
-	r := mux.NewRouter()
-	r.HandleFunc("/", HomeHandler)
-	log.Fatal(http.ListenAndServe(":8080", r))
-}
+	var port, env string
+	flag.StringVar(&port, "port", "8080", "port number")
+	flag.StringVar(&env, "env", "development", "environment mode")
+	flag.Parse()
 
-func HomeHandler(w http.ResponseWriter, r *http.Request) {
+	r := mux.NewRouter()
+	r.StrictSlash(true)
+	r.HandleFunc("/", handlers.Home)
+
+	if env == "development" {
+		r.PathPrefix("/assets/").Handler(
+			http.StripPrefix("/assets", http.FileServer(http.Dir("assests"))))
+	}
+
+	port = fmt.Sprintf(":%v", port)
+	fmt.Printf("server is running at port %v\n", port)
+	loggedRouter := gh.LoggingHandler(os.Stdout, r)
+	log.Fatal(http.ListenAndServe(port, loggedRouter))
 }

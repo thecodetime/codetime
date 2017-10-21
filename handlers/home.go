@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"fmt"
+	"html/template"
 	"net/http"
 )
 
 func Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "<h1>Hello</h1>")
+	t := template.Must(template.ParseFiles("templates/layout.html"))
+	t.Execute(w, nil)
 }

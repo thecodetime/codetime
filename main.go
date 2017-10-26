@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/ekkapob/codetime/handlers"
+	"github.com/ekkapob/codetime/handlers/courses"
 	gh "github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/namsral/flag"
@@ -21,10 +22,11 @@ func main() {
 	r := mux.NewRouter()
 	r.StrictSlash(true)
 	r.HandleFunc("/", handlers.Home)
+	r.HandleFunc("/courses", courses.Index)
 
 	if env == "development" {
 		r.PathPrefix("/assets/").Handler(
-			http.StripPrefix("/assets", http.FileServer(http.Dir("assests"))))
+			http.StripPrefix("/assets", http.FileServer(http.Dir("assets"))))
 	}
 
 	port = fmt.Sprintf(":%v", port)

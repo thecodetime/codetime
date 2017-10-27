@@ -1,7 +1,14 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 @import 'colors';
 @import 'fonts';
 @import 'font_icons';
 @import 'home';
+@import 'footer';
 
 a.primary {
   color: white;

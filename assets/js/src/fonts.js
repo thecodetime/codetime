@@ -1,6 +1,12 @@
 if (!sessionStorage.fontsLoaded) {
   var fontRennerMedium = new FontFaceObserver('renner_medium');
-  fontRennerMedium.load().then(function() {
+  var fontKanitLight = new FontFaceObserver('kanit_light');
+  var fontKanitSemiBold = new FontFaceObserver('kanit_semibold');
+  Promise.all([
+    fontRennerMedium.load(),
+    fontKanitLight.load(),
+    fontKanitSemiBold.load()
+  ]).then(function(){
     $('html').addClass('fonts-loaded');
     sessionStorage.fontsLoaded = true;
   });

@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var apiUrl, port, env string
-	flag.StringVar(&port, "port", "8080", "port number")
+	flag.StringVar(&port, "port", "4000", "port number")
 	flag.StringVar(&env, "env", "development", "environment mode")
 	flag.StringVar(&apiUrl, "api", "http://localhost:8080", "api url")
 	flag.Parse()

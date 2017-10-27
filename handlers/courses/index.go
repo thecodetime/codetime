@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/ekkapob/codetime/handlers/templates"
+	"github.com/ekkapob/codetime/templates"
 )
 
 type Course struct {

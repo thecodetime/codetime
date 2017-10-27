@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/ekkapob/codetime/handlers/templates"
+	"github.com/ekkapob/codetime/templates"
 )
 
 func Home(w http.ResponseWriter, r *http.Request) {

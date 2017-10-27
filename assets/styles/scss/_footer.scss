@@ -1,0 +1,68 @@
+.fonts-loaded {
+  #footer .title {
+    font-family: 'renner_medium';
+  }
+}
+#footer {
+  background-color: #1A1A1A;
+  color: #B6B6B6;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  a {
+    color: #B6B6B6;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $md) {
+      // display: block;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-right: 5em;
+      margin-top: 2em;
+      .title {
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+        color: white;
+      }
+      a {
+        line-height: 1.8em;
+      }
+      @media (max-width: $sm) {
+        font-size: 0.9em;
+      }
+      @media (max-width: $lg) {
+        margin-right: 2em;
+      }
+    }
+  }
+  .contact {
+    margin-top: 4em;
+    font-size: 0.9em;
+    .title {
+      font-size: 1.2em;
+    }
+  }
+  .codetime-diamond {
+    font-size: 4.5em;
+    position: absolute;
+    bottom: 0em;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: $md) {
+      left: 15px;
+      transform: initial;
+    }
+  }
+}

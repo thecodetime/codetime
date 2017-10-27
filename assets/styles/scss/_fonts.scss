@@ -5,3 +5,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'kanit_light';
+  src: url('/assets/fonts/kanit-light.woff2') format('woff2'),
+       url('/assets/fonts/kanit-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kanit_semibold';
+  src: url('/assets/fonts/kanit-semibold.woff2') format('woff2'),
+       url('/assets/fonts/kanit-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

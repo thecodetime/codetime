@@ -9,7 +9,10 @@ var uglify = require('gulp-uglify');
 
 gulp.task('js', (cb) => {
   pump([
-    gulp.src('./assets/js/src/**/*.js'),
+    gulp.src([
+      './assets/js/src/vendor/*.js',
+      './assets/js/src/*.js'
+    ]),
     sourcemaps.init(),
     concat('main.js'),
     uglify(),

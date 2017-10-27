@@ -1,5 +1,22 @@
 @import 'colors';
+@import 'fonts';
+@import 'font_icons';
+@import 'home';
 
-body {
-  color: $red;
+a.primary {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: #0A3258;
+    transition: 0.2s;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
 }

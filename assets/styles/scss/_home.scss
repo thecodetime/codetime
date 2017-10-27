@@ -1,0 +1,60 @@
+.site-logo {
+  margin-top: -0.6em;
+  font-size: 7em;
+  span {
+    display: inline-flex;
+  }
+  .path1 {
+    text-shadow: 0px 3px 10px $black-30;
+  }
+}
+.hero-bg {
+  background: linear-gradient(#156AD1, #3B94FF);
+  height: 600px;
+}
+.top-hero-bg {
+  background: linear-gradient(#2B82EB, #3B94FF);
+  width: 100%;
+  height: 120px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.nav {
+  justify-content: center;
+  li {
+    padding: 0 2em;
+    letter-spacing: 2px;
+  }
+}
+
+.hero-container {
+  margin-top: 10em;
+}
+
+html.fonts-loaded {
+  .nav,
+  .hero-text {
+    font-family: 'renner_medium';
+  }
+}
+
+.hero-text {
+  background-color: $black-30;
+  padding: 1em 2.5em 1em 2em;
+  font-size: 1.25em;
+  letter-spacing: 5px;
+  color: white;
+  border-radius: 3px;
+  position: relative;
+  .cursor {
+    width: 0.8em;
+    height: 26px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    right: 1.5em;
+    bottom: 1.1em;
+    animation: flash infinite 2s;
+  }
+}

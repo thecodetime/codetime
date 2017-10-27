@@ -3,9 +3,10 @@ package courses
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 
-	"github.com/ekkapob/codetime/handlers"
+	"github.com/ekkapob/codetime/handlers/templates"
 )
 
 type Course struct {
@@ -17,19 +18,22 @@ type Course struct {
 	Descriptions string `json:"descriptions"`
 	Updated      int64  `json:"updated"`
 }
+
 type Courses struct {
 	Data []Course `json:"data"`
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
-	res, err := http.Get(fmt.Sprintf("%s/api/contents?type=Course", handlers.API_PATH))
-	defer res.Body.Close()
+	apiUrl := r.Context().Value("api").(string)
+	res, err := http.Get(fmt.Sprintf("%s/api/contents?type=Course", apiUrl))
 	if err != nil {
-		panic("cannot retrieve courses")
+		log.Fatalf("cannot get courses with error %v\n", err)
 		return
 	}
+	defer res.Body.Close()
+
 	var courses Courses
 	json.NewDecoder(res.Body).Decode(&courses)
-	t := handlers.LoadTemplate("courses/index.tmpl")
+	t := templates.LoadTemplate("course/index.tmpl")
 	t.ExecuteTemplate(w, "layout", courses)
 }

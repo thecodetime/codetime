@@ -1,12 +1,8 @@
-package handlers
+package templates
 
 import (
 	"html/template"
 	"path"
-)
-
-const (
-	API_PATH = "http://localhost:8080"
 )
 
 func LoadTemplate(contentFile string) *template.Template {

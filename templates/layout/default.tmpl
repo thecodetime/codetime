@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content={{block "description" .}}"Code Time, a coding School,
+  aims to teach better software development and workflow."{{end}}>
+  <meta name="keywords" content={{block "keywords" .}}"coding school, code school, programming,
+  website development, coding classes, computer programming, computer coding, agile,
+  website progamming, workflow, frontend developer, backend developer"{{end}}>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/assets/images/favicon.png?v=1">
-  <title>Code Time</title>
+  <title>Code Time{{block "title" .}}{{end}}</title>
   {{template "styles"}}
 </head>
 <body>

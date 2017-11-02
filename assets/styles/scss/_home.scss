@@ -88,8 +88,8 @@ html.fonts-loaded {
 }
 
 .content-body {
-  padding: 6em 5em 5em 7em;
-  @media (max-width: $md) {
+  padding: 6em 5em 2em 6em;
+  @media (max-width: $lg) {
     padding: 4em 2em;
   }
   p {

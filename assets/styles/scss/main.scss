@@ -27,3 +27,16 @@ a.primary {
     opacity: 0;
   }
 }
+
+.photo-grid {
+  background-size: cover;
+  background-position: center;
+  min-height: 270px;
+  border: 1px #fff solid;
+  &.bg-pos-x-75 {
+    background-position-x: 75%;
+  }
+  &.bg-pos-x-35 {
+    background-position-x: 35%;
+  }
+}

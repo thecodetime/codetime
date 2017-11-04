@@ -1,0 +1,66 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+a.primary {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: #0A3258;
+    transition: 0.2s;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@mixin pos-x($value) {
+  background-position-x: $value;
+}
+.photo-grid {
+  background-size: cover;
+  background-position: center;
+  min-height: 270px;
+  border: 1px #fff solid;
+  &.bg-pos-x-75 {
+    @include pos-x(75%);
+  }
+  &.bg-pos-x-35 {
+    @include pos-x(35%);
+  }
+}
+
+.btn {
+  padding: 0.8em 1.5em;
+  &.thai {
+    letter-spacing: 1px;
+  }
+  .icon {
+    font-size: 2em;
+    float: left;
+    margin-right: 0.25em;
+  }
+}
+
+.btn-default {
+  background-color: white;
+  color: $black-100;
+}
+
+.btn-primary {
+  background-color: $blue-100;
+}
+
+.btn-dark-navy {
+  background-color: #196ED5;
+  border-bottom: 2px solid #0E6090;
+}
+

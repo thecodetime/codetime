@@ -1,42 +1,6 @@
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
 @import 'colors';
+@import 'global';
 @import 'fonts';
 @import 'font_icons';
 @import 'home';
 @import 'footer';
-
-a.primary {
-  color: white;
-  text-decoration: none;
-  &:hover {
-    color: #0A3258;
-    transition: 0.2s;
-  }
-}
-
-@keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
-  }
-  25%, 75% {
-    opacity: 0;
-  }
-}
-
-.photo-grid {
-  background-size: cover;
-  background-position: center;
-  min-height: 270px;
-  border: 1px #fff solid;
-  &.bg-pos-x-75 {
-    background-position-x: 75%;
-  }
-  &.bg-pos-x-35 {
-    background-position-x: 35%;
-  }
-}

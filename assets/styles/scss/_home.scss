@@ -1,5 +1,5 @@
 body {
-  color: #323232;
+  color: $black-100;
 }
 .codetime-diamond {
   span {
@@ -10,14 +10,14 @@ body {
   margin-top: -0.6em;
   font-size: 7em;
   .path1 {
-    text-shadow: 0px 3px 10px $black-30;
+    text-shadow: 0px 3px 10px $black-alpha-30;
   }
 }
 .hero-bg {
-  background: linear-gradient(#156AD1, #3B94FF);
+  background: $gradient-blue;
   height: 600px;
   .top-hero-bg {
-    background: linear-gradient(#2B82EB, #3B94FF);
+    background: $gradient-blue;
     width: 100%;
     height: 120px;
     border-bottom-left-radius: 50%;
@@ -64,7 +64,7 @@ html.fonts-loaded {
 }
 
 .hero-text {
-  background-color: $black-30;
+  background-color: $black-alpha-30;
   padding: 1em 2.5em 1em 2em;
   font-size: 1.25em;
   letter-spacing: 5px;
@@ -118,10 +118,10 @@ html.fonts-loaded {
 
 .code-school {
   .title {
-    color: #2C83EC;
+    color: $blue-100;
   }
   .sub-text {
-    color: #79B6FF;
+    color: $blue-150;
   }
 }
 
@@ -141,7 +141,7 @@ html.fonts-loaded {
 
 .workshop {
   .icon, .topic-title {
-    color: #266CC0;
+    color: $blue-100;
   }
 }
 
@@ -153,34 +153,13 @@ html.fonts-loaded {
 
 .getting-tough {
   .icon, .topic-title {
-    color: #FF5151;
+    color: $red-100;
   }
 }
 
 .career-growth {
   .icon, .topic-title {
     color: #9BA010;
-  }
-}
-
-.btn-primary {
-  background-color: #2C83EC;
-}
-
-.btn-dark-navy {
-  background-color: #196ED5;
-  border-bottom: 2px solid #0E6090;
-}
-
-.btn {
-  padding: 0.8em 1.5em;
-  &.thai {
-    letter-spacing: 1px;
-  }
-  .icon {
-    font-size: 2em;
-    float: left;
-    margin-right: 0.25em;
   }
 }
 
@@ -201,7 +180,7 @@ html.fonts-loaded {
     letter-spacing: 2px;
     padding-top: 3.5em;
     span {
-      color: #FF5151;
+      color: $red-100;
     }
     @media (max-width: $sm) {
       font-size: 1.6em;
@@ -250,7 +229,7 @@ html.fonts-loaded {
 }
 
 .gradient-blue-bg {
-  background: linear-gradient(#156AD1, #3B94FF);
+  background: $gradient-blue;
 }
 
 .design-develop {
@@ -261,13 +240,16 @@ html.fonts-loaded {
     colod: white;
   }
   .topic .thai {
-    color: #323232;
+    color: $black-100;
   }
   .left-image {
     height: 100%;
     min-height: 500px;
     background-image: url(/assets/images/coding.jpg);
     background-size: cover;
+  }
+  .content-body {
+    padding-bottom: 5em;
   }
 }
 
@@ -320,7 +302,3 @@ html.fonts-loaded {
   }
 }
 
-.btn-default {
-  background-color: white;
-  color: #323232;
-}

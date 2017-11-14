@@ -1,0 +1,30 @@
+#contact {
+  .hero-image {
+    background-image: url('/assets/images/contact.jpg');
+    .hero-text {
+      padding-top: initial;
+      @media (max-width: $md) {
+        position: initial;
+      }
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 7em;
+    }
+  }
+}
+.contact-item {
+  a {
+    display: flex;
+    align-items: center;
+    margin: 0.8em 0;
+    color: initial;
+    img {
+      height: 1.8em;
+      margin-right: 0.8em;
+    }
+  }
+}

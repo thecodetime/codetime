@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/ekkapob/codetime/handlers/courses"
+	"github.com/ekkapob/codetime/handlers/learning"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
@@ -18,11 +19,18 @@ func New(env string, apiUrl string) http.Handler {
 	router := mux.NewRouter()
 	router.StrictSlash(true)
 	router.HandleFunc("/", Home)
-	router.HandleFunc("/courses", withApi(apiUrl, courses.Index))
+	router.HandleFunc("/courses", courses.Index)
+	router.HandleFunc("/courses/{name}", courses.Show)
+	// router.HandleFunc("/courses", withApi(apiUrl, courses.Index))
+	router.HandleFunc("/learning", learning.Index)
+	router.HandleFunc("/contact", Contact)
 	if env == "development" {
 		router.PathPrefix("/assets/").Handler(
 			http.StripPrefix("/assets", http.FileServer(http.Dir("assets"))))
 	}
+	router.NotFoundHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
+	})
 	return handlers.LoggingHandler(os.Stdout, router)
 }
 

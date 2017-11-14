@@ -20,14 +20,26 @@
   version = "v1.5.0"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/jmoiron/sqlx"
+  packages = [".","reflectx"]
+  revision = "de8647470aafe4854c976707c431dbe1eb2822c6"
+
+[[projects]]
   name = "github.com/namsral/flag"
   packages = ["."]
   revision = "71ceffbeb0ba60fccc853971bb3ed4d7d90bfd04"
   version = "v1.7.4-pre"
 
+[[projects]]
+  branch = "v2"
+  name = "gopkg.in/yaml.v2"
+  packages = ["."]
+  revision = "c95af922eae69f190717a0b7148960af8c55a072"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "c065b0c4300fd7595ed12f65982dd9c157e8e812825f084df3706eef8dc7be67"
+  inputs-digest = "4ebdfd0d0e1a7a65b5d073c5ddd0cd501352b1d4f8e984cbeef6d93c91a1b74e"
   solver-name = "gps-cdcl"
   solver-version = 1

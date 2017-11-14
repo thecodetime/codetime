@@ -1,0 +1,28 @@
+{{define "header"}}
+<div id="header">
+  <div class="menu-container {{if .NoHeader}}d-none{{end}}">
+    <div class="container">
+      <nav>
+        <a id="mobile-menu-toggle" href="#"
+          class="d-block d-md-none icon icon-mobile-menu"></a>
+        <a class="home-icon" href="/">{{template "codetime-diamond-stroke"}}</a>
+        <ul class="d-none d-md-flex d-lg-flex nav">
+          <li><a href="/courses">Courses</a></li>
+          <!-- <li><a href="/learning">Learning</a></li> -->
+          <li><a href="#">Our Work</a></li>
+          <li><a href="/contact">Talk to Us</a></li>
+        </ul>
+        <a class="d-block d-md-none" href="#">Talk to Us</a>
+      </nav>
+    </div>
+  </div>
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="/courses">Courses</a></li>
+      <!-- <li><a href="/learning">Learning</a></li> -->
+      <li><a href="#">Our Work</a></li>
+      <li><a href="/contact">Talk to Us</a></li>
+    </ul>
+  </div>
+</div>
+{{end}}

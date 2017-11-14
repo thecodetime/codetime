@@ -1,301 +1,276 @@
-body {
-  color: $black-100;
-}
-.codetime-diamond {
-  span {
-    display: inline-flex;
-  }
-}
-.site-logo {
-  margin-top: -0.6em;
-  font-size: 7em;
-  .path1 {
-    text-shadow: 0px 3px 10px $black-alpha-30;
-  }
-}
-.hero-bg {
-  background: $gradient-blue;
-  height: 600px;
-  .top-hero-bg {
+#home {
+  .hero-bg {
     background: $gradient-blue;
-    width: 100%;
-    height: 120px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-  }
-  .hero-container {
-    margin-top: 10em;
-  }
-  .nav {
-    margin-top: 1em;
-    justify-content: center;
-    li {
-      padding: 0 2em;
-      letter-spacing: 2px;
-    }
-  }
-  @media (max-width: $sm) {
-    height: 400px;
+    height: 600px;
     .top-hero-bg {
-      height: 75px;
+      background: $gradient-blue;
+      width: 100%;
+      height: 120px;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
     }
     .hero-container {
-      margin-top: 4em;
+      margin-top: 10em;
     }
     .nav {
-      margin-top: initial;
+      margin-top: 2em;
+      justify-content: center;
       li {
-        margin-bottom: 0.5em;
+        padding: 0 2em;
+        letter-spacing: 2px;
+      }
+    }
+    @media (max-width: $sm) {
+      height: 400px;
+      .top-hero-bg {
+        height: 90px;
+      }
+      .hero-container {
+        margin-top: 4em;
+      }
+      .nav {
+        margin-top: 1em;
+        li {
+          margin-bottom: 0.5em;
+        }
       }
     }
   }
-}
 
-html.fonts-loaded {
-  .nav,
-  .hero-text,
-  .section .title,
-  .better-team-work .title {
-    font-family: 'renner_medium';
-  }
-  .thai {
-    font-family: 'kanit_light';
-  }
-}
-
-.hero-text {
-  background-color: $black-alpha-30;
-  padding: 1em 2.5em 1em 2em;
-  font-size: 1.25em;
-  letter-spacing: 5px;
-  color: white;
-  border-radius: 3px;
-  position: relative;
-  @media (max-width: $md) {
-    font-size: 1em;
-    letter-spacing: 3px;
-  }
-  .cursor {
-    width: 0.8em;
-    height: 26px;
-    background-color: white;
-    display: inline-block;
-    position: absolute;
-    right: 1.5em;
-    bottom: 1.1em;
-    animation: flash infinite 2s;
-  }
-}
-
-.content-body {
-  padding: 6em 5em 2em 6em;
-  @media (max-width: $lg) {
-    padding: 4em 2em;
-  }
-  p {
-    font-size: 1.1em;
-    line-height: 1.8em;
-    letter-spacing: 1px;
-    @media (max-width: $sm) {
-      font-size: 16px;
-    }
-  }
-}
-
-.section {
-  letter-spacing: 2px;
-  .title {
-    line-height: 1.25em;
-    font-size: 2.25em;
-    @media (max-width: $md) {
-      font-size: 2em;
-    }
-  }
-  .sub-text {
+  .hero-text {
+    background-color: $black-alpha-30;
+    padding: 1em 2.5em 1em 2em;
     font-size: 1.25em;
-  }
-}
-
-.code-school {
-  .title {
-    color: $blue-100;
-  }
-  .sub-text {
-    color: $blue-150;
-  }
-}
-
-.topic {
-  display: flex;
-  .icon {
-    font-size: 2em;
-  }
-  .topic-title {
-    font-size: 0.8em;
-  }
-  p {
-    font-size: 0.9em;
-    line-height: 1.5em;
-  }
-}
-
-.workshop {
-  .icon, .topic-title {
-    color: $blue-100;
-  }
-}
-
-.team-exp {
-  .icon, .topic-title {
-    color: #10A046;
-  }
-}
-
-.getting-tough {
-  .icon, .topic-title {
-    color: $red-100;
-  }
-}
-
-.career-growth {
-  .icon, .topic-title {
-    color: #9BA010;
-  }
-}
-
-.better-team-work {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('/assets/images/team_work.jpg');
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  color: white;
-  @media (max-width: $sm) {
-    height: 500px;
-  }
-  .title {
-    text-align: center;
-    font-size: 2.8em;
-    letter-spacing: 2px;
-    padding-top: 3.5em;
-    span {
-      color: $red-100;
-    }
-    @media (max-width: $sm) {
-      font-size: 1.6em;
-      padding-top: 4em;
-    }
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    letter-spacing: 5px;
     color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 1.25em;
+    border-radius: 3px;
+    position: relative;
+    @media (max-width: $md) {
+      font-size: 1em;
+      letter-spacing: 3px;
+    }
+    .cursor {
+      width: 0.8em;
+      height: 26px;
+      background-color: white;
+      display: inline-block;
+      position: absolute;
+      right: 1.5em;
+      bottom: 1.1em;
+      animation: flash infinite 2s;
+    }
+  }
+
+  .content-body {
+    padding: 6em 5em 2em 6em;
+    @media (max-width: $lg) {
+      padding: 4em 2em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.8em;
+      letter-spacing: 1px;
+      @media (max-width: $sm) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .section {
     letter-spacing: 2px;
+    .title {
+      line-height: 1.25em;
+      font-size: 2.25em;
+      @media (max-width: $md) {
+        font-size: 2em;
+      }
+    }
+    .sub-text {
+      font-size: 1.25em;
+    }
+  }
+
+  .code-school {
+    .title {
+      color: $blue-100;
+    }
+    .sub-text {
+      color: $blue-150;
+    }
+  }
+
+  .topic {
+    display: flex;
     .icon {
       font-size: 2em;
-      margin-right: 0.25em;
     }
-    li {
-      display: flex;
-      align-items: center;
-      padding: 1em;
+    .topic-title {
+      font-size: 0.8em;
     }
-    @media (max-width: $sm) {
-      font-size: 1em;
-      li {
-        padding: 0.5em;
-      }
-    }
-  }
-  p {
-    width: 60%;
-    text-align: center;
-    font-size: 1.25em;
-    letter-spacing: 1px;
-    display: inline-block;
-    line-height: 2em;
-    @media (max-width: $sm) {
-      width: initial;
-      padding-left: 1em;
-      padding-right: 1em;
+    p {
+      font-size: 0.9em;
+      line-height: 1.5em;
     }
   }
 
-}
+  .workshop {
+    .icon, .topic-title {
+      color: $blue-100;
+    }
+  }
 
-.gradient-blue-bg {
-  background: $gradient-blue;
-}
+  .team-exp {
+    .icon, .topic-title {
+      color: #10A046;
+    }
+  }
 
-.design-develop {
-  .gradient-blue-bg {
-    color: white;
+  .getting-tough {
+    .icon, .topic-title {
+      color: $red-100;
+    }
   }
-  .section .title {
-    colod: white;
+
+  .career-growth {
+    .icon, .topic-title {
+      color: #9BA010;
+    }
   }
-  .topic .thai {
-    color: $black-100;
-  }
-  .left-image {
-    height: 100%;
-    min-height: 500px;
-    background-image: url(/assets/images/coding.jpg);
+
+  .better-team-work {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('/assets/images/team_work.jpg');
+    width: 100%;
     background-size: cover;
-  }
-  .content-body {
-    padding-bottom: 5em;
-  }
-}
-
-.our-customers {
-  color: #DEDEDE;
-  p {
-    width: 70%;
-    @media (max-width: $md) {
-      width: initial;
-    }
-  }
-  img {
-    position: absolute;
-    bottom: -3em;
-    height: 450px;
-    right: 2.5em;
-    @media (max-width: $md) {
-      display: none;
-    }
-  }
-  .content-body {
-    padding-left: 2em;
-    padding-bottom: 6em;
-    @media (max-width: $lg) {
-      padding-top: 2em;
-    }
+    background-position: center;
+    height: 600px;
+    color: white;
     @media (max-width: $sm) {
-      padding-left: 1em;
-      padding-right: 1em;
+      height: 500px;
     }
-  }
-  .customers {
-    padding-top: 10em;
-    @media (max-width: $lg) {
-      padding: 5em 0 3em;
-    }
-    .first-customers {
-      .icon {
-        font-size: 40px;
+    .title {
+      text-align: center;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+      padding-top: 3.5em;
+      span {
+        color: $red-100;
+      }
+      @media (max-width: $sm) {
+        font-size: 1.6em;
+        padding-top: 4em;
       }
     }
-    .second-customers {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-size: 1.25em;
+      letter-spacing: 2px;
       .icon {
-        font-size: 60px;
-        @media (max-width: $sm) {
-          font-size: 50px;
+        font-size: 2em;
+        margin-right: 0.25em;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+      }
+      @media (max-width: $sm) {
+        font-size: 1em;
+        li {
+          padding: 0.5em;
+        }
+      }
+    }
+    p {
+      width: 60%;
+      text-align: center;
+      font-size: 1.25em;
+      letter-spacing: 1px;
+      display: inline-block;
+      line-height: 2em;
+      @media (max-width: $sm) {
+        width: initial;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+
+  }
+
+  .gradient-blue-bg {
+    background: $gradient-blue;
+  }
+
+  .design-develop {
+    .gradient-blue-bg {
+      color: white;
+    }
+    .section .title {
+      colod: white;
+    }
+    .topic .thai {
+      color: $black-100;
+    }
+    .left-image {
+      height: 100%;
+      min-height: 500px;
+      background-image: url(/assets/images/coding.jpg);
+      background-size: cover;
+    }
+    .content-body {
+      padding-bottom: 5em;
+    }
+  }
+
+  .our-customers {
+    color: #DEDEDE;
+    p {
+      width: 70%;
+      @media (max-width: $md) {
+        width: initial;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: -3em;
+      height: 450px;
+      right: 2.5em;
+      @media (max-width: $md) {
+        display: none;
+      }
+    }
+    .content-body {
+      padding-left: 2em;
+      padding-bottom: 6em;
+      @media (max-width: $lg) {
+        padding-top: 2em;
+      }
+      @media (max-width: $sm) {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+    .customers {
+      padding-top: 10em;
+      @media (max-width: $lg) {
+        padding: 5em 0 3em;
+      }
+      .first-customers {
+        .icon {
+          font-size: 40px;
+        }
+      }
+      .second-customers {
+        .icon {
+          font-size: 60px;
+          @media (max-width: $sm) {
+            font-size: 50px;
+          }
         }
       }
     }

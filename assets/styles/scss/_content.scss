@@ -1,0 +1,21 @@
+.hero-image {
+  height: 400px;
+  @include bg-img;
+  .hero-text {
+    font-family: 'renner_medium';
+    font-size: 3.5em;
+    letter-spacing: 8px;
+    color: white;
+    padding-top: 1em;
+    @media (max-width: $md) {
+      position: absolute;
+      right: 0.5em;
+      font-size: 2em;
+      width: 70%;
+    }
+  }
+  @media (max-width: $md) {
+    height: 300px;
+    background-position-x: 30%;
+  }
+}

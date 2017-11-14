@@ -1,0 +1,38 @@
+courses:
+  - title: 'เริ่มต้นกับ Git Essentials'
+    body: 'นอกจากการเขียนโค้ดที่ดีแล้ว การบริหารจัดการซอร์สโค้ดที่ดีก็จำเป็นอย่างยิ่ง เรียนรู้การบริหารโค้ดต่างๆ อย่างมืออาชีพด้วย ด้วยเครื่องมือที่นิยมที่สุดในโลก'
+    image: /assets/images/courses/git_essentials/github.png
+    link: courses/git-essentials
+    author:
+      avatar: /assets/images/avatars/ekkapob.jpg
+      name: Ek
+      skill: 'Full-stack & Scrum master'
+  - title: Agile Developer
+    body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
+    image: /assets/images/courses/agile.png
+    link: courses/agile-developer
+    author:
+      avatar: /assets/images/avatars/ekkapob.jpg
+      name: Ek
+      skill: 'Full-stack & Scrum master'
+  - title: Being Frontend Developer
+    # body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
+    body: '- Comming Soon -'
+    image: /assets/images/courses/frontend.jpg
+    # link: courses/agile-software-development
+    link: '#'
+    author:
+      avatar: /assets/images/avatars/ekkapob.jpg
+      name: Ek
+      skill: 'Full-stack & Scrum master'
+  - title: Being Backend Developer
+    # body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
+    body: '- Comming Soon -'
+    image: /assets/images/courses/backend.jpg
+    # link: courses/agile-software-development
+    link: '#'
+    author:
+      avatar: /assets/images/avatars/ekkapob.jpg
+      name: Ek
+      skill: 'Full-stack & Scrum master'
+

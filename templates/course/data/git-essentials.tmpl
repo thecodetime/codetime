@@ -1,0 +1,71 @@
+{{define "content"}}
+<div id="course">
+  <div class="hero-image"
+    style="background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.25)),
+    url('/assets/images/courses/git_essentials/git_background.jpg')">
+    <div class="container">
+      <div class="hero-text text-center">Git Essentials</div>
+    </div>
+  </div>
+  <div class="container mb-5 story-container">
+    <div class="section mt-5 mb-4">
+      <h5>Git Essentials</h5>
+      <hr class="my-1">
+      <p class="thai">เพราะเวลาการพัฒนาซอฟท์แวร์จริง แค่เขียนโค้ดเก่งอย่างเดียวคงไม่พอ ไหนจะเรื่องการจัดการซอร์สโค้ดของแต่ละคน การแบ่งงาน เอาเข้าโปรดักชั่นต่างๆ การตรวจสอบข้อผิดพลาดอีกจิปาถะ คอร์สนี้เราจะพูดถึงและลงมือใช้งานเครื่องมือการจัดการซอร์สโค้ดที่นิยมระดับโลกอย่าง git แนวทางการทำงานอย่างมืออาชีพ ตั้งแต่เริ่มต้นแบ่งงาน การ review sourcecode การรวบรวมโค้ดที่สมบูรณ์ (merge, rebase) เพื่อที่จะนำขึ้น production อย่างไม่ติดขัด เหมาะสำหรับนักพัฒนาทั่วๆไป ที่ต้องทำงานเป็นทีม</div>
+
+    <div class="topics thai">
+      <h5>เนื้อหาที่ครอบคลุม</h5>
+      <hr class="my-1">
+      <ul>
+        <li>
+          <div>เข้าใจหลักการทำงานของ source control และเริ่มต้นใช้งาน Git</div>
+          <div class="subtext">Git concepts, setup, merge tools, คำสั่งที่จำเป็นสำหรับการใช้งานทั่วไป</div>
+        </li>
+        <li>
+          <div>การจัดการ source code ภายในทีม และแก้ไข conflicts ต่างๆ</div>
+          <div class="subtext">Git pull, push, solve conflicts, undo things, etc.</div>
+        </li>
+        <li>
+          <div>Git Workflow ในทีมและองค์กร</div>
+          <div class="subtext">Branch management, production, develop, hot-fix, release, feature branches</div>
+        </li>
+        <li>
+          <div>ติดตั้งและใช้งานระบบ Auto Deployment สำหรับการทำ Continuous Integration/Delivery (CI/CD)</div>
+          <div class="subtext">Git hooks, Circle CI</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="thai">
+      <h5>ตัวอย่างเนื้อหา</h5>
+      <hr class="my-1">
+      <div class="text-center">
+        <iframe class="video" height="350" src="https://www.youtube.com/embed/App5qP55lyo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-top: 0.8em"></iframe> 
+        <a target="_blank" style="display: block" href="https://www.youtube.com/watch?v=App5qP55lyo&list=PL86RvhJ7eZiVX0lhOUJ4BvpSpB2dvd2ch" alt="The Code Time - YouTube">ดูตัวอย่างอื่นเพิ่มเติม</a>
+      </div>
+    </div>
+
+    <div class="thai contact">
+      <h5>สนใจเรียน</h5>
+      <hr class="my-1">
+      <br>
+      <div>ติดต่อเพื่อเช็คเวลา</div>
+      <div class="contact-item">
+        <a href="tel:66-80-441-4062">
+          <img src="/assets/images/mobile_phone.png">
+        +(66)80-441-4062</a>
+      </div>
+      <div class="contact-item">
+        <a href="https://www.facebook.com/thecodetime" target="_blank" alt="The Code Time - Facebook">
+          <img src="/assets/images/facebook.png">@thecodetime</a>
+      </div>
+      <div class="contact-item">
+        <a href="mailto:contact@thecodetime.com" alt="The Code Time email">
+          <img src="/assets/images/email.png">contact@thecodetime.com</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{end}}

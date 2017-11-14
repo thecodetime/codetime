@@ -1,26 +1,26 @@
 {{define "content"}}
-<div id="courses">
-  <div class="index hero-image">
+<div id="learning">
+  <div class="hero-image">
     <div class="container">
       <div class="hero-text text-right">Take the Next Step</div>
     </div>
   </div>
   <div class="container mb-5 story-container">
     <div class="section mt-5 mb-4">
-      <h5>Our Courses</h5>
+      <h5>Learning</h5>
       <hr class="my-1">
     </div>
 
     <div class="row topics">
-      {{range .Courses}}
+      {{range .Articles}}
         <div class="col-sm-6">
           <div class="topic">
-            <a class="thumbnail-link" href="{{.Link}}">
+            <a class="thumbnail-link" href="{{.Link}}" target="_blank">
               <div class="thumbnail" style="background-image:
               url('{{.Image}}');"></div>
             </a>
             <div class="info">
-              <a href="{{.Link}}">
+              <a href="{{.Link}}" target="_blank">
                 <div class="title">{{.Title}}</div>
                 <div class="brief mt-2">{{.Body}}</div>
               </a>
@@ -28,7 +28,7 @@
                 <img src="{{.Avatar}}" alt="{{.Name}}">
                 <div class="ml-2">
                   <div class="name">{{.Name}}</div>
-                  <div class="skill">{{.Skill}}</div>
+                  <div class="date">{{.Published}}</div>
                 </div>
               </div>
             </div>
@@ -40,4 +40,3 @@
   </div>
 </div>
 {{end}}
-

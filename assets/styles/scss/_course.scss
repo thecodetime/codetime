@@ -1,0 +1,43 @@
+#course {
+  .hero-image {
+    .hero-text {
+      padding-top: initial;
+      @media (max-width: $md) {
+        position: initial;
+      }
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 7em;
+    }
+  }
+  h5 {
+    margin-top: 2em;
+  }
+  p {
+    margin-top: 0.8em;
+  }
+  .subtext {
+    color: $grey-100;
+  }
+  ul {
+    margin-top: 1em;
+    li {
+      margin: 0.5em 0;
+    }
+  }
+  iframe.video {
+    width: 70%;
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+  .course-images {
+    img {
+      border: 2px solid white;
+    }
+  }
+}

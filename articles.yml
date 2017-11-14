@@ -1,0 +1,14 @@
+articles:
+  - title: 'เริ่มต้น Git Essentials #1'
+    body: 'Red Hat Enterprise Linux ประกาศรองรับสถาปัตยกรรม ARM อย่างเป็นทางการ ทำให้ตลาดเซิร์ฟเวอร์ ARM มีอนาคตสดใสขึ้น เพราะดิสโทรชื่อดังอย่าง RHEL'
+    image: /assets/images/github.png
+    published: '21 Nov 17'
+    link: https://google.com
+    author:
+      avatar: /assets/images/avatars/ekkapob.jpg
+      name: Ek
+  - title: title
+    body: body
+    author:
+      avatar: aaa
+      name: name

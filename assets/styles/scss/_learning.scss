@@ -1,0 +1,101 @@
+#learning {
+  .hero-image {
+    background-image: url('/assets/images/take_the_next_step.jpg');
+    height: 400px;
+    @include bg-img;
+    .hero-text {
+      font-family: 'renner_medium';
+      font-size: 3.5em;
+      letter-spacing: 8px;
+      color: white;
+      padding-top: 1em;
+      @media (max-width: $md) {
+        position: absolute;
+        right: 0.5em;
+        font-size: 2em;
+        width: 70%;
+      }
+    }
+    @media (max-width: $md) {
+      height: 300px;
+      background-position-x: 30%;
+    }
+  }
+  h5 {
+    font-family: 'renner_medium';
+    letter-spacing: 2px;
+  }
+
+  .story-container {
+    width: 1000px;
+    @media (max-width: $lg) {
+      width: initial;
+    }
+  }
+
+  .topics {
+    .topic {
+      color: initial;
+      display: flex;
+      border: 1px solid #e3e3e3;
+      margin-bottom: 25px;
+      @media (max-width: $lg) {
+        flex-direction: column;
+      }
+      .thumbnail-link {
+        display: table-cell;
+        .thumbnail {
+          height: 260px;
+          width: 200px;
+          @include bg-img;
+          @media (max-width: $lg) {
+            height: 185px;
+            width: 100%;
+          }
+        }
+      }
+      .info {
+        position: relative;
+        padding: 1em;
+        font-family: 'kanit_light';
+        .title {
+          font-family: 'kanit_semibold';
+          font-size: 18px;
+        }
+        .brief {
+          font-size: 14px;
+          color: $grey-100;
+        }
+        .author {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          width: 100%;
+          bottom: 1em;
+          font-size: 14px;
+          font-family: "Helvetica Neue",Arial,sans-serif;
+          @media (max-width: $lg) {
+            position: initial;
+            margin-top: 1em;
+          }
+          img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+          }
+          .date {
+            font-size: 12px;
+            color: $grey-100;
+          }
+        }
+      }
+      a {
+        color: initial;
+        &:hover {
+          text-decoration: initial;
+        }
+      }
+    }
+  }
+
+}

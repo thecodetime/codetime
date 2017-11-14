@@ -4,6 +4,29 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
+html.fonts-loaded {
+  .nav,
+  .hero-text,
+  .section .title,
+  .better-team-work .title {
+    font-family: 'renner_medium';
+  }
+  .thai {
+    font-family: 'kanit_light';
+  }
+}
+
+body {
+  color: $black-100;
+}
+.site-logo {
+  margin-top: -0.6em;
+  font-size: 7em;
+  .path1 {
+    text-shadow: 0px 3px 10px $black-alpha-30;
+  }
+}
+
 a.primary {
   color: white;
   text-decoration: none;
@@ -62,5 +85,11 @@ a.primary {
 .btn-dark-navy {
   background-color: #196ED5;
   border-bottom: 2px solid #0E6090;
+}
+
+.icon-with-span {
+  span {
+    display: inline-flex;
+  }
 }
 

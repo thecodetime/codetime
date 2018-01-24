@@ -1,0 +1,109 @@
+#our_work {
+  .hero-image {
+    height: 500px;
+    background-image: url('/assets/images/our_work.jpg');
+    .hero-text {
+      padding-top: initial;
+      @media (max-width: $md) {
+        position: initial;
+      }
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 7em;
+    }
+  }
+  h5 {
+    line-height: 1.5em;
+  }
+  .product-type {
+    margin-top: 3em;
+    h4 {
+      font-family: 'renner_medium';
+      margin-bottom: 1em;
+    }
+    img {
+      height: 200px;
+    }
+    ul {
+      margin-top: 2em;
+    }
+  }
+
+  .product-types {
+    height: 900px;
+    @media (max-width: $md) {
+      height: initial;
+    }
+    .ecommerce-container {
+      background-color: #c2e39f;
+      .ecommerce-image {
+        background-image: url('/assets/images/our_work/eshop.jpg');
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: 98%;
+        background-repeat: no-repeat;
+        @media (max-width: $md) {
+          height: 300px;
+        }
+      }
+    }
+    .hilight,
+    .topic-title,
+    .title,
+    .topic-title,
+    .icon {
+      color: $green-100;
+    }
+    .sub-text {
+      color: $green-150;
+    }
+    .topic {
+    }
+  }
+
+  .customers {
+    background-color: $black-200;
+    color: $white-100;
+    .customer {
+      padding: 0 5em;
+      .text {
+        margin-left: 2em;
+        a {
+          color: $grey-100;
+          text-decoration: underline;
+        }
+        @media (max-width: $sm) {
+          font-size: 0.9em;
+        }
+      }
+      @media (max-width: $lg) {
+        padding: initial;
+      }
+    }
+    .other-customers {
+      color: $grey-100;
+    }
+  }
+  .contact {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid white;
+    padding: 2em 6em;
+    border-radius: 5px;
+    @media (max-width: $sm) {
+      padding: 1em;
+      width: 100%;
+      border-radius: initial;
+    }
+    h5 {
+      color: $black-100;
+    }
+  }
+
+}
+

@@ -6,7 +6,6 @@ import (
 	"os"
 
 	"github.com/ekkapob/codetime/handlers/courses"
-	"github.com/ekkapob/codetime/handlers/learning"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
@@ -22,7 +21,8 @@ func New(env string, apiUrl string) http.Handler {
 	router.HandleFunc("/courses", courses.Index)
 	router.HandleFunc("/courses/{name}", courses.Show)
 	// router.HandleFunc("/courses", withApi(apiUrl, courses.Index))
-	router.HandleFunc("/learning", learning.Index)
+	// router.HandleFunc("/learning", learning.Index)
+	router.HandleFunc("/our_work", OurWork)
 	router.HandleFunc("/contact", Contact)
 	if env == "development" {
 		router.PathPrefix("/assets/").Handler(

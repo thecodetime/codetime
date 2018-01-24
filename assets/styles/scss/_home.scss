@@ -61,55 +61,12 @@
     }
   }
 
-  .content-body {
-    padding: 6em 5em 2em 6em;
-    @media (max-width: $lg) {
-      padding: 4em 2em;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.8em;
-      letter-spacing: 1px;
-      @media (max-width: $sm) {
-        font-size: 16px;
-      }
-    }
-  }
-
-  .section {
-    letter-spacing: 2px;
-    .title {
-      line-height: 1.25em;
-      font-size: 2.25em;
-      @media (max-width: $md) {
-        font-size: 2em;
-      }
-    }
-    .sub-text {
-      font-size: 1.25em;
-    }
-  }
-
   .code-school {
     .title {
       color: $blue-100;
     }
     .sub-text {
       color: $blue-150;
-    }
-  }
-
-  .topic {
-    display: flex;
-    .icon {
-      font-size: 2em;
-    }
-    .topic-title {
-      font-size: 0.8em;
-    }
-    p {
-      font-size: 0.9em;
-      line-height: 1.5em;
     }
   }
 
@@ -228,7 +185,7 @@
   }
 
   .our-customers {
-    color: #DEDEDE;
+    color: $white-100;
     p {
       width: 70%;
       @media (max-width: $md) {
@@ -277,3 +234,48 @@
   }
 }
 
+.content-body {
+  padding: 6em 5em 2em 6em;
+  @media (max-width: $lg) {
+    padding: 4em 2em;
+  }
+  p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    @media (max-width: $sm) {
+      font-size: 16px;
+    }
+  }
+}
+
+#home.section {
+  letter-spacing: 2px;
+}
+
+.section {
+  .title {
+    line-height: 1.25em;
+    font-size: 2.25em;
+    @media (max-width: $md) {
+      font-size: 2em;
+    }
+  }
+  .sub-text {
+    font-size: 1.25em;
+  }
+}
+
+.topic {
+  display: flex;
+  .icon {
+    font-size: 2em;
+  }
+  .topic-title {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+}

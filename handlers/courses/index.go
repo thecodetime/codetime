@@ -35,6 +35,7 @@ type Course struct {
 	Body  string
 	Image string
 	Link  string
+	Alt   string
 	Author
 }
 

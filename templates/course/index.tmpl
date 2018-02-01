@@ -15,12 +15,12 @@
       {{range .Courses}}
         <div class="col-sm-6">
           <div class="topic">
-            <a class="thumbnail-link" href="{{.Link}}">
+            <a class="thumbnail-link" href="{{.Link}}" alt="{{.Alt}}">
               <div class="thumbnail" style="background-image:
               url('{{.Image}}');"></div>
             </a>
             <div class="info">
-              <a href="{{.Link}}">
+              <a href="{{.Link}}" alt="{{.Alt}}">
                 <div class="title">{{.Title}}</div>
                 <div class="brief mt-2">{{.Body}}</div>
               </a>

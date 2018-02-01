@@ -3,6 +3,7 @@ courses:
     body: 'นอกจากการเขียนโค้ดที่ดีแล้ว การบริหารจัดการซอร์สโค้ดที่ดีก็จำเป็นอย่างยิ่ง เรียนรู้การบริหารโค้ดต่างๆ อย่างมืออาชีพด้วย ด้วยเครื่องมือที่นิยมที่สุดในโลก'
     image: /assets/images/courses/git_essentials/github.png
     link: courses/git-essentials
+    alt: 'Git Essentials'
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek
@@ -11,16 +12,25 @@ courses:
     body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
     image: /assets/images/courses/agile.png
     link: courses/agile-developer
+    alt: 'Agile Developer'
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek
       skill: 'Full-stack & Scrum master'
+  # - title: Continuous Integration & Delivery
+  #   body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
+  #   image: /assets/images/courses/infinite.jpg
+  #   link: courses/continuous-integration-delivery
+  #   author:
+  #     avatar: /assets/images/avatars/ekkapob.jpg
+  #     name: Ek
+  #     skill: 'Full-stack & Scrum master'
   - title: Being Frontend Developer
-    # body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
-    body: '- Comming Soon -'
+    body: 'เริ่มต้นเป็น website developer จากพื้นฐานการเขียนโปรแกรมฟังก์ชั่นการทำงานของเว็บไซต์ การออกแบบตกแต่งความสวยงามของเว็บไซต์ คอร์สนี้เน้นพื้นฐาน ความเข้าใจต่างๆตั้งแต่กระบวนความคิดในการสร้างผลงานเว็บไซต์ ตั้งแต่เบื้องต้น การใช้งานที่ผู้ใช้ต้องการ การเลือกสรรเครื่องมือในการพัฒนา ขั้นตอนการทำงานต่างๆ จนถึงการที่ผู้เรียนสามารถนำไปต่อยอดกับงานหรือธุรกิจของตัวเองได้'
+    body: 'เริ่มต้นเป็นนักพัฒนา website ด้วยพื้นฐานการเขียนโปรแกรม การออกแบบตกแต่งเว็บไซต์ สร้างความเข้าใจต่างๆตั้งแต่เริ่มต้นจนจบกระบวนการพัฒนา'
     image: /assets/images/courses/frontend.jpg
-    # link: courses/agile-software-development
-    link: '#'
+    link: courses/being-frontend-developer
+    alt: 'Being Frontend Developer'
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek

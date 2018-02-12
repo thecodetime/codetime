@@ -7,7 +7,7 @@ courses:
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek
-      skill: 'Full-stack & Scrum master'
+      skill: ' Full-Stack developer & Agile coach'
   - title: Agile Developer
     body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
     image: /assets/images/courses/agile.png
@@ -16,7 +16,7 @@ courses:
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek
-      skill: 'Full-stack & Scrum master'
+      skill: ' Full-Stack developer & Agile coach'
   # - title: Continuous Integration & Delivery
   #   body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
   #   image: /assets/images/courses/infinite.jpg
@@ -24,7 +24,7 @@ courses:
   #   author:
   #     avatar: /assets/images/avatars/ekkapob.jpg
   #     name: Ek
-  #     skill: 'Full-stack & Scrum master'
+  #     skill: ' Full-Stack developer & Agile coach'
   - title: Being Frontend Developer
     body: 'เริ่มต้นเป็น website developer จากพื้นฐานการเขียนโปรแกรมฟังก์ชั่นการทำงานของเว็บไซต์ การออกแบบตกแต่งความสวยงามของเว็บไซต์ คอร์สนี้เน้นพื้นฐาน ความเข้าใจต่างๆตั้งแต่กระบวนความคิดในการสร้างผลงานเว็บไซต์ ตั้งแต่เบื้องต้น การใช้งานที่ผู้ใช้ต้องการ การเลือกสรรเครื่องมือในการพัฒนา ขั้นตอนการทำงานต่างๆ จนถึงการที่ผู้เรียนสามารถนำไปต่อยอดกับงานหรือธุรกิจของตัวเองได้'
     body: 'เริ่มต้นเป็นนักพัฒนา website ด้วยพื้นฐานการเขียนโปรแกรม การออกแบบตกแต่งเว็บไซต์ สร้างความเข้าใจต่างๆตั้งแต่เริ่มต้นจนจบกระบวนการพัฒนา'
@@ -34,7 +34,7 @@ courses:
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek
-      skill: 'Full-stack & Scrum master'
+      skill: ' Full-Stack developer & Agile coach'
   - title: Being Backend Developer
     # body: 'การทำงานที่ดี ไม่ได้่มีแค่เรื่องเขียนโค้ด การวางแผนและพัฒนาให้ได้งานที่ดี มีความสำคัญมาก เราจะมาเรียนรู้ว่าการทำงานจริงมีลำดับขั้นตอนอะไรบ้าง'
     body: '- Comming Soon -'
@@ -44,5 +44,5 @@ courses:
     author:
       avatar: /assets/images/avatars/ekkapob.jpg
       name: Ek
-      skill: 'Full-stack & Scrum master'
+      skill: ' Full-Stack developer & Agile coach'
 
